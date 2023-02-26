@@ -1,6 +1,6 @@
 # ascii-web-stylize
 
-[![Project image](https://i.ibb.co/1QzMSZ3/image-2023-02-26-16-16-22.png)]
+![Project image](https://i.ibb.co/1QzMSZ3/image-2023-02-26-16-16-22.png)
 
 ##### Instructions
 1. Run the server
