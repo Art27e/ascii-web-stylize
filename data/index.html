@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="data/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel = "icon" href ="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYJJREFUSEvllf0xRDEUR89WgA50gArQARWgElSCCugAFaCCLQEdmDOTmGy8vNw3+8aOcf/afcnNuV/5ZcGGbLEhLn8afA4sgecp1Zsj4w9gC7gDDCJk64L3gZdEugBuQ1RYu8dmeJNgB8Drb4HN8Az4BLajUPetW2oz3EuDdTQ32HIeAvawNDN8Tx+ugav02yo89frdyziX0jPr4THDxwQ7TrCy5/rWwX4H3gKbjYc6tZo9FFQOjxlepvUdwGvlfrP1emnuNyjXVmwIrLPQPCxvCVo7C7AFrucAPVw/1+y9pp/wlYmvwWWpdBoThZ5wlG360aoSfALcF/UYE4SocNSJnAIP9XWaAo4KRwhsIPXG1mRGhCNc6lzlyGSOCUfkRjSVa2wyW8Jh4NEb0ZXMIQEZEo5crbJVo89kT7ly34Xlt3ZIOEpxmEUya8Hxf0s4hvY2v0Uyrp17whEKYCo4Khxd+FRwVDhmB0eEowutJTPkkF6q3d5D3ztsaql754XX/x/4C7SvZR+uZb5OAAAAAElFTkSuQmCC" type = "image/x-icon">
+  <title>ASCII-ART-WEB</title>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="card">
+  <form action="/ascii-art" class="form" method="POST">
+    <div class="logo">
+      ASCII-ART-WEB<i class='bx bx-code-alt'></i>
+  </div>
+      <textarea maxlength="150" name="userinput" class="textarea-input" wrap='off'>{{ .Orig}}</textarea>
+      <p align="center"><select id="fonts" name="fonts"><option value="standard">Standard</option><option value="shadow">Shadow</option>
+        <option value="thinkertoy">Thinkertoy</option><input type="submit" value="SUBMIT"></p></select>
+        {{if.Res}}
+        <textarea class="textarea-output" maxlength="50" wrap='off' readonly name="output">{{ .Res}}</textarea>
+      </form>
+      <form action="/download" method="POST">
+        <input type="submit" value="DOWNLOAD"></select></form>
+        <form action="/info" method="POST">
+        <hr><input type="submit" value="INFO"></select></form>
+      </div>
+</body>
+{{end}}
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color:rgb(249, 249, 249);
+  display: grid;
+  font-family: 'Ubuntu';
+  color:rgb(56, 78, 249);
+  place-content:center;
+  margin: 0;
+  padding: 0 32px;
+  animation: rotate 6s infinite alternate linear;
+}
+
+.circle {
+  position: fixed;
+  top: -50vmin;
+  left: -50vmin;
+  width: 100vmin;
+  height: 92vmin;
+  border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+  background:rgb(1, 204, 255);
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.circle::after{
+  content: "";
+  position: inherit;
+  right: -50vmin;
+  bottom: -50vmin;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background:rgb(56, 78, 249);
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+input[type="Go back!"]{
+  border:double 2px rgb(48, 32, 225);
+  border-radius: 1.25rem;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  color:rgb(56, 78, 249);
+  padding: 15px 30px;
+  background-color: #fff;
+  text-decoration: none;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="Go back!"]:hover{
+  color: rgb(255, 255, 255);
+  color:rgb(7, 201, 84);
+}
+
+li {
+  text-align:left;
+}
+
+.card2 {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  font-family: 'Ubuntu';
+  color:rgb(246, 246, 246);
+  margin: auto;
+  text-align: center; 
+  border-radius: 1.25rem;
+  background:rgb(2, 195, 79);
+  opacity: 0.75;
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card3 {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Ubuntu';
+  z-index: 3;
+  color:rgb(0, 0, 0);
+  margin: auto;
+  text-align: center;
+  border-radius: 1.25rem;
+  background: rgb(223, 223, 223);
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card-title {
+  font-size: 25px;
+  font-family:'Ubuntu';
+  text-align: center;
+  color: #0c0496c9;
+}
+
+.card-photo {
+  width: 40%;
+  height: 40%;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.card-authors {
+  font-size: 15px;
+  font-family:'Ubuntu';
+  text-align: center;
+  color: #000000c9;
+}
+
+.card3 .logo i{
+  font-size: 30px;
+  color: #5661F5;
+  font-weight: 500;
+}
+
+button{
+  cursor: pointer;
+  border-radius: 1.25rem;
+  width: 30%;
+  height: 50px;
+  padding: 0 16px;
+  background:rgb(56, 78, 249);
+  color:rgb(247, 247, 247);
+  border: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375;
+}
+
+button:hover{
+  color: rgb(255, 255, 255);
+  background:rgb(36, 36, 166)
+}
